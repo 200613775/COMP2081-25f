@@ -1,0 +1,120 @@
+/* Custom CSS */
+/* STEP 2a: Use Google Web Fonts API to attach the "Lobster" font - note that there are two methods: Standard and @import (https://fonts.google.com/) */
+
+/* /* STEP 3a: Use the font face kit at Font Squirrel to generate @font-face for HoneyScript Light (https://www.dafont.com/Honey-Script.font) - Read the legal disclaimer at the bottom of the home page - it is your legal responsibility to check the terms of use for fonts (open the generated stylesheet.css) */
+
+
+/* STEP 4a: Use the font face kit at Font Squirrel to generate @font-face for "Komika Title Regular" (https://www.fontsquirrel.com/fonts/komika-title) - a better fit than "Lobster" - only generate the WOFF and WOFF2 versions of the font */
+
+
+/* STEP 5: Use the provided font, "Sign Painter Upright" for the author's name, and for the title of the book as they are the precise font used in the book cover design - please don't use this font outside of this class, as we have purchased a license for the educational use of this font only within the scope of this particular class (https://houseind.com/hi/signpainter) */
+
+/* STEP 5a: Create the @font-face rule for "Sign Painter Upright" */
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html	{
+	height: 100%;
+	background: #ddd;
+}
+body {
+	/* STEP 1: Set base font settings to 120% font-size, 1.4 line-height, Futura (font-style, font-variant, font-weight, font-size, line-height, and font-family) (https://developer.mozilla.org/en-US/docs/Web/CSS/font) */
+	;
+	color: #111;
+	width: 480px;
+	margin: 0 auto;
+	min-height: 100%;
+	background: url('../images/sky.jpg');
+	transform: rotate(-5deg);
+	box-shadow: 10px 10px 50px #666;
+	position: relative;
+	min-height: 750px;
+}
+header {
+	text-align: center;
+}
+header p:first-child {
+	padding-top: 30px;
+	margin-bottom: -30px;
+}
+header p:first-child, header address {
+	background-color: rgb(212, 0, 31);
+}
+header address {
+	/* STEP 2b: Set "Lobster" as the first in the font stack for the author's name */
+	font-family: Impact, Arial, sans-serif;
+	/* STEP 5b: Replace "Lobster" above with "Sign Painter Upright" as the first font in the stack */
+	/* STEP 5d: Size up the font to emulate the original design - note the difference between em and rem (root em) */
+	font-size: 3em;
+	font-weight: normal;
+	font-style: normal;
+	letter-spacing: 0.1em;
+	color: #eee;
+	text-shadow: 6px 4px 1px #000;
+	height: 1.25em;
+	font-kerning: normal;
+	text-rendering: optimizeLegibility;
+}
+/* STEP 6a: Apply font-kerning to render using the font's native kerning table values - note that this CSS property only applies to OpenType fonts */
+
+/* STEP 6b: To ensure proper font kerning, apply text-rendering: optimizeLegibility; - read the additional notes provided to you by the Font Foundry (House Industries), inside the fonts folder in a file called WebRecommendations.html */
+header p {
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+header p:nth-of-type(2) {
+	background-color: #eee;
+	color: rgb(212, 0, 31);
+	padding: 10px;
+}
+header p:nth-of-type(2) em {
+	color: #111;
+}
+header h1 {
+	/* STEP 3b: Set "HoneyScript Light" as the first font in the stack for header h1 */
+	font-family: Impact, Arial, sans-serif;
+	font-size: 3.3em;
+	font-weight: normal;
+	line-height: 0.9;
+	margin-top: 25px;
+}
+header h1 strong {
+	display: block;
+	/* STEP 5c: Set "Sign Painter Upright" as the first font in the stack */
+	font-family: Impact, Arial, sans-serif;
+	font-size: 1.7em;
+	letter-spacing: 0.05em;
+	font-weight: normal;
+}
+header h1 em{
+	/* STEP 4b: Set "Komika Title Regular" as the first font in the stack for the phrase "A Memoir" */
+	font-family: Impact, Arial, sans-serif;
+	font-style: normal;
+	color: rgb(212, 0, 31);
+	font-size: 0.4em;
+	letter-spacing: 0.3em;
+	display: block;
+	text-align: right;
+	margin: 20px;
+}
+img[alt="The Thunderbolt Kid"] {
+	position: absolute;
+	right: 25px;
+	bottom: 0;
+
+}
+blockquote p {
+	font-size: 0.6em;
+	font-weight: normal;
+	width: 27%;
+	margin-left: 15px;
+	line-height: 2;
+	text-align: center;
+}
+blockquote p cite {
+	color: #fff;
+	display: block;
+}

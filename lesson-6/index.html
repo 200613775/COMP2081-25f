@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Navbar | Bootstrap</title>
+		<!-- Bootstrap -->
+		<!-- STEP 1: Link to the Bootstrap CSS using a Content Distribution Network (CDN) -->
+
+		<!-- STEP 16: Link to your custom styles, then open the CSS file in your code editor to add padding or margin to the MAIN element -->
+		<link href="css/custom.css" rel="stylesheet">
+	</head>
+	<body>
+<!-- STEP 3: Build a fluid or a fixed-width container for proper alignment and padding of content-->
+
+<!-- STEP 4: Build out your basic page-level containers, HEADER, MAIN, FOOTER,and add an H1 inside the HEADER to begin the document outline -->
+
+<!-- STEP 5: Build out a NAV element with the classes .navbar - add .navbar-light, and .bg-light to set the text and background colors - include role="navigation" for accessibilty -->
+<!-- STEP 6: Construct the branding image and text using .navbar-brand with an A element and .d-inline-block, and .align-top with an img element (point the src to img/bootstrap-solid.svg) -->
+<!-- STEP 7: Include a series of navigation links using a UL element (right after the branding), contained by a DIV -->
+<!-- STEP 8: Add .navbar-nav to the UL, .nav-item to each LI, and .nav-link to each A -->
+<!-- STEP 9: Add .navbar-expand-lg to the parent NAV element to have the links arrange horizontally for large screens (or sm | md | xl for other screen size breakpoints) -->
+<!-- STEP 10: Add .navbar-collapse to the DIV element to set up the list to work on small screens, then add .collapse to hide the links altogether below the breakpoint set in STEP 9 -->
+<!-- STEP 11: Build out the Navbar Toggler - construct a BUTTON element after the branding A element, adding a .navbar-toggler class and the attribute type="button" -->
+<!-- STEP 12: Add the 'hamburger' menu icon with an empty SPAN element that has the .navbar-toggler-icon class -->
+<!-- STEP 13: Associate the icon with the collapsed menu UL built in STEP 7 - start with adding and ID to the DIV (globalNav or whatever), then adding data-bs-target="#globalNav" and  data-bs-toggle="collapse" to the BUTTON element (consider also adding ARIA attributes: aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation") -->
+<!-- STEP 14: Change the .navbar-expand-** class on the parent NAV element to set the collapse to activate at different screen sizes (sm | md | lg | xl) -->
+<!-- STEP 15: Make the navbar stay at the top of the viewport with .fixed-top on the NAV (we will need some padding or margin on the top of the page HEADER so content is not now hidden - add margin-top to the div.container using the Bootstrap Spacing Utilities) -->
+<!-- STEP 16: Add a search form - build a FORM element with .form-inline, including an INPUT with class .form-control and a BUTTON with class .btn, and place it inside the .collapse DIV after the UL -->
+<!-- STEP 17: Align the link group to the left, and the search form to the right (add class .mr-auto to the UL, and .ml-auto to the FORM ) -->
+<!-- STEP 18: Add a dropdown link with all the appropriate classes (see the Bootstrap documentation for the HTML) -->
+<!-- STEP 19: Change colors by setting text and background-color on the parent NAV element (.navbar-dark for light-colored text and .bg-dark for the black background theme color) -->
+<!-- STEP 20: Add a custom color to the background of the Navbar (remove the .bg-dark) -->
+<!-- STEP 21: Explore the new Offcanvas navbar! -->
+				<h1>Navbar | Bootstrap</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit lobortis dui, eu congue neque placerat in. Aliquam placerat porttitor lectus eu porta. Duis aliquet volutpat magna quis pharetra. Phasellus turpis dui, suscipit lacinia velit quis, hendrerit pellentesque nibh. Nunc sed leo sit amet dui ultricies lobortis ut id ex. Donec efficitur libero at fringilla tempor. Etiam sodales arcu vitae dui finibus tempor at venenatis nunc.</p>
+
+				<h2>A Subheading</h2>
+				<p>Cras sed suscipit nisi. Aenean commodo nunc eget tortor auctor bibendum. Ut posuere arcu velit, vel tincidunt lectus sagittis et. Pellentesque gravida luctus pharetra. In felis neque, feugiat at lacus eget, faucibus iaculis velit. Nullam tristique, justo eget blandit finibus, dui justo aliquam ligula, sit amet iaculis quam lectus sed ex. Sed ac mi ut ante mollis tristique. In sed nisl quis est sollicitudin varius non et velit. Sed turpis nunc, varius vitae iaculis ut, viverra eget neque.</p>
+
+				<h2>Another Subheading</h2>
+				<p>Morbi vel ipsum id dolor rutrum lacinia. Praesent ullamcorper vulputate libero a vestibulum. Cras mollis mollis magna, ut mattis lacus convallis vel. Praesent accumsan, odio quis varius suscipit, nulla ante tincidunt nisl, non interdum quam eros nec nibh. Nulla eget dapibus metus, ac ultricies purus. Vestibulum et tristique felis. Nulla tempor, libero quis gravida suscipit, quam felis tempus metus, eu congue lectus orci a leo. Phasellus tincidunt nibh vel dolor vehicula viverra vitae ut metus. In faucibus nulla metus, eget bibendum ex condimentum a. Morbi vel lobortis lacus, vitae malesuada sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse non velit lacus. Ut finibus pretium tellus, in aliquet purus sodales ut. Phasellus in nisi felis. Suspendisse at laoreet nunc. Vestibulum cursus at ex ut pharetra.</p>
+
+				<h2>And Another</h2>
+				<p>Mauris in orci ac neque suscipit vestibulum vitae id leo. Etiam sem massa, semper id est euismod, sodales malesuada quam. Mauris placerat libero nibh, non interdum purus porttitor in. Donec eget justo nisi. In libero erat, iaculis in libero sed, eleifend varius lectus. Curabitur euismod metus condimentum, pellentesque nunc non, luctus dolor. Nam condimentum nec nisi ac pretium. Vivamus et ex a risus lacinia facilisis. Sed non odio lacus. Etiam consequat felis massa, tristique semper neque elementum sed. Vestibulum a lectus metus.</p>
+
+				<h2>And On It Goes</h2>
+				<p>In scelerisque sit amet mi non scelerisque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut dictum tincidunt dolor, accumsan pellentesque tortor fringilla at. Praesent hendrerit, nunc sit amet tristique pretium, ex massa fringilla leo, gravida consectetur sapien sapien eget quam. Suspendisse placerat et est vitae aliquet. Maecenas imperdiet elementum lacinia. Aliquam vel feugiat nisi, id venenatis dui. Mauris tempor cursus gravida. Vivamus maximus ut purus nec auctor.</p>
+
+				<h2>When Will It Stop?</h2>
+				<p>Donec tellus augue, faucibus at ipsum eget, ullamcorper lacinia magna. Suspendisse tincidunt tortor odio, nec blandit quam hendrerit sit amet. Etiam iaculis libero sed nisl luctus, in efficitur libero ullamcorper. Cras fermentum et ex id volutpat. Etiam vitae massa quis diam ultrices sollicitudin in a lectus. Fusce sem ex, vulputate quis vestibulum id, tempor quis ante. Sed vitae magna nibh.</p>
+
+				<h2>Still Going…</h2>
+				<p>Fusce auctor lacinia euismod. Quisque hendrerit orci ut nibh porta bibendum at eget mauris. Maecenas dapibus ligula in fermentum condimentum. Vivamus tempus sit amet lacus eu finibus. Nullam viverra, augue ac bibendum ornare, mi sapien faucibus odio, eget volutpat augue felis vel elit. Vestibulum condimentum sapien dui, nec semper erat tristique ut. Sed eget est nec ipsum finibus viverra eu et urna. Fusce tempor faucibus ligula, eu fermentum justo suscipit quis. Mauris luctus ornare justo, at viverra neque. Nam mauris lectus, efficitur at lacinia convallis, molestie id enim. Donec malesuada mi sed justo consequat efficitur. Nulla a eleifend magna. Suspendisse id lectus dapibus, tempor magna id, vestibulum felis. Nulla ac ex elit. Pellentesque et suscipit tellus.</p>
+
+				<h2>…And Going…</h2>
+				<p>Vestibulum fringilla nisl vel finibus fringilla. Nulla ut mi et turpis vestibulum malesuada. Duis consequat faucibus dui, ac dictum ipsum iaculis ut. Quisque varius cursus felis et vehicula. In vel ex in est sodales tincidunt. Fusce quam ipsum, tristique sit amet risus sed, accumsan rutrum leo. Nulla ultrices mauris orci, vitae hendrerit sem viverra quis. Sed sit amet odio lectus. Donec iaculis tortor vitae vestibulum iaculis. Nunc sagittis sem augue, ac ullamcorper sem faucibus eu. Donec eget gravida massa. Curabitur tincidunt imperdiet magna quis tempus. Proin eu dolor ac odio dapibus pharetra. Maecenas ornare convallis lacinia. Vestibulum ultricies eleifend auctor. Cras ut dolor id nunc posuere tempor.</p>
+
+				<h2>…Nearly There…</h2>
+				<p>Praesent ultrices scelerisque scelerisque. Aliquam blandit pellentesque risus et mollis. Donec hendrerit posuere eros, eu eleifend turpis ultrices ut. Curabitur in metus elit. Suspendisse placerat tortor purus, non vulputate dui pharetra nec. Mauris porttitor sit amet diam quis semper. Nunc a arcu vestibulum, dignissim purus in, egestas urna. Nullam in mollis odio. Phasellus tempus justo eu lacus tincidunt dictum. Duis ac dolor dapibus, ornare arcu porttitor, gravida leo. Ut enim justo, tempus a interdum maximus, efficitur at nunc. Duis maximus sit amet arcu et vehicula.</p>
+
+				<h2>…At Last</h2>
+				<p>Aenean felis libero, bibendum sed nunc sit amet, volutpat mattis arcu. Nunc pellentesque ac neque vel iaculis. Cras eget interdum sapien, dictum malesuada arcu. Morbi imperdiet auctor nibh id egestas. Nunc quis luctus diam. Nunc lectus orci, congue a erat sagittis, malesuada blandit nunc. Nulla ornare sem ut sagittis dignissim. Donec maximus, tellus vel maximus varius, turpis ante ultrices urna, non tincidunt velit magna non turpis.</p>
+
+				<p><small>Learn more about the <a href="https://getbootstrap.com/docs/5.2/components/navbar/" title="View the Bootstrap documentation for the Navbar Component">Bootstrap Navbar Component</a>.</small>
+
+		<!-- STEP 2: Attach the supporting JavaScript Libraries -->
+		
+
+	</body>
+</html>

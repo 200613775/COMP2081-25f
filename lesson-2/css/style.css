@@ -1,0 +1,339 @@
+/*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+   
+/*
+ * FLEXBOX
+ */
+
+ #flex body > div {
+  background: #ccc;
+  border: 5px solid #aaa;
+/* STEP 6d: Set the height of the flex-container to fill the whole window */
+  
+/* STEP 1: Set the parent flexbox properties - this is now the FLEX CONTAINER */
+  
+/* STEP 2: Define the main axis - this is the flex-direction
+Possible values are: row | row-reverse | column | column-reverse (lets go with row) */
+  
+/* STEP 3a: Determine how element in the container will wrap - this is the flex-wrap property
+Possible values are: nowrap | wrap | wrap-reverse
+We need to set a width on the flex children to see this */
+  
+/* STEP 3c: We can use the shorthand flex-flow to specify both the flex-direction and the flex-wrap */
+  
+/* STEP 4a: Control alignment of flex children along the main axis, with justify-content
+Possible values are: flex-start | flex-end | center | space-between | space-around | space-evenly
+We need to reduce the width of the children to see this */
+  
+/* STEP 6c: Change the justify-content back to stretch */
+/* STEP 5: Align flex children on the cross axis with align-items
+Possible values are: flex-start | flex-end | center | baseline | stretch */
+  
+/* STEP 10b: Change the align-items on the parent (to flex-start) to see how align self can override this property */
+/* STEP 6a: Specify how flex children will be reflowed when there is extra space in the cross-axis
+We will need to resize the children so that they wrap to see this (and change justify-content to flex-start, and the height of the flex container to full height of the viewport - 100vh)
+Possible values for align-content are: flex-start | flex-end | center | space-between | space-around | stretch */
+  
+}
+
+#flex body > div > div {
+  padding: 1rem;
+/* STEP 3b: Set a width on the flex children to see the flex-wrap property */
+  
+/* STEP4b: Reduce width of the flex children to see the justify-content property */
+
+/* STEP6b: Increase width of the flex children to see the align-content property */
+
+
+}
+
+/* STEP 7: We now turn our attention the the FLEX ITEMS, which are the children of the FLEX CONTAINER
+Change the order in which the children appear - use order: <number>; */
+
+/* STEP 8: Control how each of the children are sized with flex-grow */
+#flex body > div > div:nth-of-type(1) {
+  background: brown;
+
+}
+
+#flex body > div > div:nth-of-type(2) {
+  background: darkorange;
+
+}
+#flex body > div > div:nth-of-type(3) {
+  background: mediumseagreen;
+
+}
+#flex body > div > div:nth-of-type(4) {
+  background: steelblue;
+ 
+/* STEP 9b: Set flex-basis on this child */
+
+/* STEP 10a: Align a particular flex child differently than the rest with align-self (change align-items on the parent to flex-start, first) */
+
+}
+#flex body > div > div:nth-of-type(5) {
+  background: slateblue;
+
+
+}
+/* STEP 9a: Control the space occupied by a particular flex child, after which the remaining space will be re-distributed, with flex-basis */
+
+/*
+ * COLUMNS
+ */
+
+ /* STEP 11: Set the column-count on the paragraph */
+#columns body > p {
+
+}
+/* STEP 12: Set a column-gap on the paragraph above */
+
+/* STEP 13: Set the column-rule-width, column-rule-style and column-rule-color above as well */
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Collapse | Bootstrap</title>
+		<!-- Bootstrap -->
+		<!-- STEP 1: Link to the Bootstrap CSS using a Content Distribution Network (CDN) -->
+		
+		
+
+	</head>
+	<body>
+<!-- STEP 3: Build a fluid or a fixed-width container for proper alignment and padding of content-->
+		
+<!-- STEP 4: Build out your basic page-level containers, HEADER, MAIN, and FOOTER -->
+			
+				<h1 class="display-5">Accordion | Bootstrap</h1>
+				<p class="lead">Follow along as we build a Bootstrap Accordion component, using the required markup, attributes, and values.</p>
+				<!-- Bootstrap has some great typography features: https://getbootstrap.com/docs/4.0/content/typography/ -->
+			
+			
+<!-- STEP 5: Surround the entire collection of content with a DIV element to serve as the root for the accordion - use the "accordion" class and a suitable id -->
+				
+<!-- STEP 6: Create a SECTION element for each heading and content pair, by adding the "accordion-item" class -->
+					
+<!-- STEP 7: Identify the heading for each accordion item with an H2 element - include the class "accordion-header", a unique id for each -->
+						
+<!-- STEP 8: Inside the H2, add a BUTTON element with the type set to "button", the class "accordion-button", the data-bs-toggle attribute set to "collapse", the data-bs-target pointing to the id of the element to be collapsed -->
+							Heading 1
+						
+<!-- STEP 9a: Surround each of the paragraphs with a DIV identifying them as the collapsible element with the class "accordion-collapse" and put it in the collapsed state with the class "collapse" - add the id "collapse1" -->
+						
+<!-- STEP 9b: Tie the collapsible DIV you just created above to the parent accordion element with the data-bs-parent attribute pointing to the id of the entire accordion widget (see STEP 5)-->
+<!-- STEP 10: Create another DIV element with the class "accordion-body", which surrounds the content itself (a P element in this case) -->
+							
+								<p>Cras sed suscipit nisi. Aenean commodo nunc eget tortor auctor bibendum. Ut posuere arcu velit, vel tincidunt lectus sagittis et. Pellentesque gravida luctus pharetra. In felis neque, feugiat at lacus eget, faucibus iaculis velit. Nullam tristique, justo eget blandit finibus, dui justo aliquam ligula, sit amet iaculis quam lectus sed ex. Sed ac mi ut ante mollis tristique. In sed nisl quis est sollicitudin varius non et velit. Sed turpis nunc, varius vitae iaculis ut, viverra eget neque.</p>
+							
+						
+					
+<!-- STEP 11: Go ahead and build out the next two accordion sections with the markup, attributes and values you used above and see if you can get the entire widget to function properly -->
+					
+						
+							Heading 2
+						
+						
+							
+								<p>Morbi vel ipsum id dolor rutrum lacinia. Praesent ullamcorper vulputate libero a vestibulum. Cras mollis mollis magna, ut mattis lacus convallis vel. Praesent accumsan, odio quis varius suscipit, nulla ante tincidunt nisl, non interdum quam eros nec nibh. Nulla eget dapibus metus, ac ultricies purus. Vestibulum et tristique felis. Nulla tempor, libero quis gravida suscipit, quam felis tempus metus, eu congue lectus orci a leo. Phasellus tincidunt nibh vel dolor vehicula viverra vitae ut metus. In faucibus nulla metus, eget bibendum ex condimentum a. Morbi vel lobortis lacus, vitae malesuada sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse non velit lacus. Ut finibus pretium tellus, in aliquet purus sodales ut. Phasellus in nisi felis. Suspendisse at laoreet nunc. Vestibulum cursus at ex ut pharetra.</p>
+							
+						
+					
+					
+						
+							Heading 3
+						
+						
+							
+								<p>Mauris in orci ac neque suscipit vestibulum vitae id leo. Etiam sem massa, semper id est euismod, sodales malesuada quam. Mauris placerat libero nibh, non interdum purus porttitor in. Donec eget justo nisi. In libero erat, iaculis in libero sed, eleifend varius lectus. Curabitur euismod metus condimentum, pellentesque nunc non, luctus dolor. Nam condimentum nec nisi ac pretium. Vivamus et ex a risus lacinia facilisis. Sed non odio lacus. Etiam consequat felis massa, tristique semper neque elementum sed. Vestibulum a lectus metus.</p>
+							
+						
+					
+
+				
+			
+			
+				<p><small>Learn more about the <a href="https://getbootstrap.com/docs/5.2/components/accordion/" title="View the Bootstrap documentation for the Accordion Component">Accordion Component</a>.</small></p>
+			
+		
+		<!-- STEP 2: Attach the supporting JavaScript Libraries -->
+		
+	</body>
+</html>
+<!-- STEP 12: Have one of the panels default to visible by adding the class, "show" to one of the .accordion-collapse DIV elements -->
+<!-- STEP 13: Complete the accordion behaviour (only one collapsible component in a set open at a time), by associating each .collapse DIV with the parent accordion element with data-bs-parent="#myAccordion" -->
+<!-- STEP 14: Add class="accordion-flush" to the top-level accordion element container to remove borders and rounded corners - this will also display accordions snugly right next to the parent containing element -->

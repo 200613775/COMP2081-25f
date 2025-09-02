@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+html {
+	font: 150%/1.4 sans-serif;
+}
+/* STEP 3: Apply a background gradient image to the page (http://colorzilla.com/gradient-editor/) */
+body {
+	
+}
+#container {
+	margin: 1rem;
+}
+/* STEP 4: CSS Image Replacement (https://css-tricks.com/the-image-replacement-museum/) */
+header h1 {
+
+}
+
+header h1 strong {
+
+}
+/* STEP 5: Add the 'Chewy' font from Google's Font Service and apply it to all H2 and H3 elements - add the @import to the top of the CSS file */
+h2, h3 {
+
+}
+
+
+/* TRANSFORMS
+-------------------------------------------------- */
+/* STEP 6a: Control the origin of the transform (play with this in the dev tools in the browser using rotation */
+#transforms h3:nth-of-type(2) {
+}
+/* STEP 7: Translate the element (X, Y, and combined) */
+#transforms h3:nth-of-type(3) {
+}
+/* STEP 8: Scale the element (X, Y, and combined) */
+#transforms h3:nth-of-type(4) {
+}
+/* STEP 9: Skew the element (X, Y, and combined) */
+#transforms h3:nth-of-type(5) {
+}
+
+/* STEP 10: Rotate the element (X, Y, and Z) */
+#transforms h3:nth-of-type(6) {
+}
+
+/* STEP 11: Combining transforms */
+#transforms h3:nth-of-type(7) {
+}
+
+/* TRANSITIONS
+-------------------------------------------------- */
+/* STEP 12: Setting up a transition */
+#transitions h3:nth-of-type(1) {
+	/* Transition property */
+	/* Transition duration */
+}
+#transitions h3:nth-of-type(1):hover {
+}
+
+/* STEP 13: Delaying a transition */
+#transitions h3:nth-of-type(2) {
+	/* Transition property */
+	/* Transition duration */
+	/* Transition delay */
+}
+#transitions h3:nth-of-type(2):hover {
+}
+
+/* STEP 14: Controlling transition velocity */
+#transitions h3:nth-of-type(3) {
+	/* Transition property */
+	/* Transition duration */
+	/* Transition timing function */
+}
+#transitions h3:nth-of-type(3):hover {
+}
+
+/* STEP 15: Combining Transitions */
+#transitions h3:nth-of-type(4) {
+}
+#transitions h3:nth-of-type(4):hover {
+}
+
+
+/* ANIMATIONS
+-------------------------------------------------- */
+
+footer p {
+}

@@ -1,0 +1,21 @@
+/* Custom CSS */
+/* STEP 12: Using your browser's DOM Inspector, figure out how the default .carousel-caption is positioned with CSS, and change it */
+
+
+/* STEP 13: View the result in the browser, then head back to index.html */
+/* The below class and animation keyframes are used by the JavaScript */
+.zoomit {
+	animation: zoom-in-out .5s;
+}
+@keyframes zoom-in-out {
+	from {
+		transform: none;
+	}
+	50% {
+		transform: scale(1.4);
+		transform-origin: center top;
+	}
+	to {
+		transform: none;
+	}
+}

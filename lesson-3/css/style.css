@@ -1,0 +1,339 @@
+/*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+   /* GRID - Basic Concepts of grid layout (grid-basics.html)
+   ========================================================================== */
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout */
+
+.wrapper {
+  /* STEP 1: Define the grid container */
+    
+  /* STEP 2a: Define the grid tracks - starting with columns */
+    
+  /* STEP 2b: Use fractions to define column track widths (fr) */
+    
+  /* STEP 2c: Mix fractions with fixed widths */
+    
+  /* STEP 2d: Tracks using repeat() */
+    
+  /* STEP 3a: Implicit grids - set the height of new grid rows */
+    
+  /* STEP 3b: Setting minimum and maximum track dimensions with minmax() - you'll need to add some extra HTML content to one of the cells to see this */
+    
+  /* STEP 6: Set the gutters using column-gap and row-gap */
+    
+  }
+  
+  /* STEP 4a: Positioning items with respect to grid lines - instruct the browser where to plot out the first box */
+  
+  .wrapper div:nth-child(1) {
+    background: lightblue;
+    
+  }
+  
+  /* STEP 4c: Shorthand for line-positioning with grid-column and grid-row for the first box rule above */
+  
+  /* STEP 4b: Plot out where the second box in the grid container will be placed */
+  
+  .wrapper div:nth-child(2) {
+    background: lightsalmon;
+    
+  }
+  
+  /* STEP 5: Look at the browser dev tools grid inspector - the grid lines delineate the grid CELLS and grid items can span one or more cells and are called GRID AREAS */
+  
+  
+  
+     /* GRID - The Holy Grail Layout (index.html)
+     ========================================================================== */
+  
+  .container {
+  /* STEP 7: Set an element as the grid container with display: grid; */
+    
+  /* STEP 8: Define the columns for the grid with grid-template-columns - use a space-separated list of widths */
+    
+  /* STEP 9: Define the rows for the grid with grid-template-rows - use a space-separated list of widths or auto */
+    
+  /* STEP 10: Designate the cells of the resulting grid in terms of user-named content areas - repeat names for merged cells */
+    
+  /* STEP 12a: Set gutters between column tracks with column-gap */
+    
+  /* STEP 12b: Set gutters between row tracks with row-gap */
+    
+  }
+  /* .container div {
+    padding: 1rem;
+  } */
+  
+  /* STEP 11a: Associate the below element with the user-defined content zone, "header" with grid-area */
+  #item-a {
+    background-color: rgba(0,0,255,0.5);
+    
+  }
+  /* STEP 11b: Associate the below element with the user-defined content zone, "sidebar" with grid-area */
+  #item-b {
+    background-color: rgba(255,0,0,0.5);
+    
+  }
+  /* STEP 11c: Associate the below element with the user-defined content zone, "main" with grid-area */
+  #item-c {
+    background-color: rgba(255,255,0,0.5);
+    
+  }
+  /* STEP 11d: Associate the below element with the user-defined content zone, "footer" with grid-area */
+  #item-d {
+    background-color: rgba(0,255,0,0.5);
+    
+  }
+  /* STEP 11e: Associate the below element with the user-defined content zone, "navigation" with grid-area */
+  #item-e {
+    background-color: rgba(255,0,255,0.5);
+    
+  }   
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- STEP 1: Validate your HTML (http://validator.w3.org/) -->
+	<head>
+		<meta charset="utf-8">
+		<title>CSS Silly Putty</title>
+		<!-- STEP 2: Normalize your CSS -->
+		
+		<!-- STEP 3: Attach external CSS -->
+		
+	</head>
+	<body>
+		<div id="container">
+			<header>
+				<h1><strong>CSS <em>Silly Putty</em></strong></h1>
+				<h2>Bend, Stretch and Twist Your Designs</h2>
+				<nav><!-- Global navigation would go here --></nav>
+			</header>
+			<main>
+				<section id="transforms">
+					<h2>Transforms</h2>
+					<p>2D transforms in CSS allow for various transformation to be applied to elements, such as scaling or rotating. It is possible to apply one or many transforms to a single element. This allows for effects such as rotating text or images at an angle, and can be combined with transitions to apply interactive effects such as scaling up elements when the users interacts with them.</p>
+					<h3>Applying a Transform</h3>
+					<p>Two CSS properties have to be specified to apply a transform: the transform property specifies the type(s) of transform(s) you want to apply to the element and the transform-origin property sets the point of origin from where the transform takes place.</p>
+					<h3>Origin</h3>
+					<p>The initial transform-origin value is 50% 50% which is the centre of the element—50% from the left of the element and 50% from the top of the element. The origin can be specified using either a length (in the regular CSS units), a percentage or the keywords left, center or right (for the X co-ordinate) and top, center or bottom for the Y coordinate.</p>
+					<h3>Translating</h3>
+					<p>We'll start with a simple translate transform. This moves the element from its original position in the document to the new location specified by the X and Y co-ordinates supplied.</p>
+					<h3>Scaling</h3>
+					<p>The scale transform function scales the element it is applied on by the value specified from the point of origin.</p>
+					<h3>Skewing
+					<p>The skew transform function skews the element along the X or Y axis, or both. The value is specified in degrees (deg), and if only one value is specified the skew on the Y axis is set to 0 or no skew.</p>
+					<p>As with other transform functions the X and Y directions can be specified individually using skewX and skewY. If a negative value is supplied the skew is performed in the opposite direction, i.e. leaning to the right for a negative skew on the X axis, and from bottom to top for a negative skew on the Y axis.</p>
+					<h3>Rotating</h3>
+					<p>The rotate transform function rotates the element around the point of origin and as with skewing is specified in degrees. A negative value will rotate the element anti-clockwise.
+					<h3>Combining Transforms</h3>
+					<p>Multiple transforms can be applied to one transform property using a space-separated list. When multiple transforms are used, they are applied one after another linearly from left to right.</p>
+				</section>
+				<section id="transitions">
+					<h2>Transitions</h2>
+					<h3>Setting Up a Transition</h3>
+					<p>The first step in using CSS3 transitions is to define which elements you want to apply the transition to and which CSS properties will be used in the transition.</p>
+					<p>This is done with the transition-property property.</p>
+					<p>Next you'll define the duration of the transition. This is set with the transition-duration property, which by default is 0 seconds, so we add a time value, usually specified in seconds.</p>
+					<h3>Delaying a Transition</h3>
+					<p>By default the transition happens as soon as the specified element is accessed, but the transition-delay property can be used to delay the start of the transition.</p>
+					<h3>Controlling Transition Velocity</h3>
+					<p>As well as defining the timing of the transition, you can also control the velocity. Instead of a smooth transition from A to B, you can define a transition to speed up or slow down along its duration. This is defined using a cubic bezier curve, which is a common method in computer animation. To make this simpler to use in CSS, there are a number of predefined curves: ease (the default), linear, ease-in, ease-out, and ease-in-out.</p>
+					<h3>Combining Transitions</h3>
+					<p>As well as just specifying one property to transition, each of the CSS3 transitions properties can take a comma-separated list of values. This allows multiple properties to be transitioned on each element, each with their own timing and velocity values.</p>
+				</section>
+			</main>
+			<footer>
+				<p><small>Copyright Silly Putty Inc.</small></p>
+			</footer>
+		</div><!-- #container -->
+	</body>
+</html>
