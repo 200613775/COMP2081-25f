@@ -41,3 +41,28 @@ body {
     background: #d9d2e9; 
 }
 
+/* for midium layout */
+@media (min-width: 768px) {
+  body {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "A A"
+      "B C"
+      "B D"
+      "B E"
+      "F F";
+  }
+}
+
+/* for large layout */
+@media (min-width: 1024px) {
+  body {
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas:
+      "A A A"
+      "B C D"
+      "B E E"
+      "F F F";
+  }
+}
+
