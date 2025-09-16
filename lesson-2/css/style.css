@@ -89,41 +89,43 @@ textarea {
  * FLEXBOX
  */
 
+ /* Flex container */
  #flex body > div {
   background: #ccc;
   border: 5px solid #aaa;
 /* STEP 6d: Set the height of the flex-container to fill the whole window */
   
 /* STEP 1: Set the parent flexbox properties - this is now the FLEX CONTAINER */
-  
+  display: flex;
+  /* resize: both; */
 /* STEP 2: Define the main axis - this is the flex-direction
 Possible values are: row | row-reverse | column | column-reverse (lets go with row) */
-  
+  flex-direction: row;
 /* STEP 3a: Determine how element in the container will wrap - this is the flex-wrap property
 Possible values are: nowrap | wrap | wrap-reverse
 We need to set a width on the flex children to see this */
-  
+  flex-wrap: wrap;
 /* STEP 3c: We can use the shorthand flex-flow to specify both the flex-direction and the flex-wrap */
-  
+  flex-flow: row wrap;
 /* STEP 4a: Control alignment of flex children along the main axis, with justify-content
 Possible values are: flex-start | flex-end | center | space-between | space-around | space-evenly
 We need to reduce the width of the children to see this */
-  
+  justify-content: space-evenly;
 /* STEP 6c: Change the justify-content back to stretch */
 /* STEP 5: Align flex children on the cross axis with align-items
 Possible values are: flex-start | flex-end | center | baseline | stretch */
-  
+  align-items: flex-start;
 /* STEP 10b: Change the align-items on the parent (to flex-start) to see how align self can override this property */
 /* STEP 6a: Specify how flex children will be reflowed when there is extra space in the cross-axis
 We will need to resize the children so that they wrap to see this (and change justify-content to flex-start, and the height of the flex container to full height of the viewport - 100vh)
 Possible values for align-content are: flex-start | flex-end | center | space-between | space-around | stretch */
   
 }
-
+/* flex items */
 #flex body > div > div {
   padding: 1rem;
 /* STEP 3b: Set a width on the flex children to see the flex-wrap property */
-  
+  width: 7rem;
 /* STEP4b: Reduce width of the flex children to see the justify-content property */
 
 /* STEP6b: Increase width of the flex children to see the align-content property */
