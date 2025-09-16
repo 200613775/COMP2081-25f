@@ -91,19 +91,20 @@ textarea {
 
 .wrapper {
   /* STEP 1: Define the grid container */
-    
+    display: grid;
   /* STEP 2a: Define the grid tracks - starting with columns */
-    
+    /* grid-template-columns: 200px 200px 200px; */
   /* STEP 2b: Use fractions to define column track widths (fr) */
-    
+    /* grid-template-columns: 1fr 1fr 1fr; */
   /* STEP 2c: Mix fractions with fixed widths */
-    
+    grid-template-columns: 1fr 2fr 3fr;
   /* STEP 2d: Tracks using repeat() */
-    
+      grid-template-columns: 200px repeat(3, 1fr);
   /* STEP 3a: Implicit grids - set the height of new grid rows */
-    
+    /* grid-auto-rows: 200px; */
   /* STEP 3b: Setting minimum and maximum track dimensions with minmax() - you'll need to add some extra HTML content to one of the cells to see this */
-    
+    /* grid-auto-rows: minmax(50px, auto); */
+    grid-template-rows: 100px 200px 50px;
   /* STEP 6: Set the gutters using column-gap and row-gap */
     
   }
@@ -112,7 +113,12 @@ textarea {
   
   .wrapper div:nth-child(1) {
     background: lightblue;
-    
+    grid-column-start: 2;
+    grid-column-end: 4;
+     /* grid-column: 1 / 2;
+     grid-row: 2 / 3; */
+    grid-row-start: 2;
+    grid-row-end: 3;
   }
   
   /* STEP 4c: Shorthand for line-positioning with grid-column and grid-row for the first box rule above */
@@ -121,29 +127,46 @@ textarea {
   
   .wrapper div:nth-child(2) {
     background: lightsalmon;
-    
+    /* grid-column-start: 1;
+    grid-column-end: 2; */
+     grid-column: 2 / 4;
+     grid-row: 2 / 3;
+    /* grid-row-start: 2;
+    grid-row-end:3; */
   }
   
   /* STEP 5: Look at the browser dev tools grid inspector - the grid lines delineate the grid CELLS and grid items can span one or more cells and are called GRID AREAS */
+  .wrapepr div:nth-child(3){
+    background: orange;
+  }
   
-  
+  .wrapepr div:nth-child(4){
+    background: pink;
+  }
+
+  .wrapepr div:nth-child(5){
+    background: violet;
+  }
   
      /* GRID - The Holy Grail Layout (index.html)
      ========================================================================== */
   
   .container {
   /* STEP 7: Set an element as the grid container with display: grid; */
-    
+    display: grid;
   /* STEP 8: Define the columns for the grid with grid-template-columns - use a space-separated list of widths */
-    
+    grid-template-columns: 1fr 1fr 1fr;
   /* STEP 9: Define the rows for the grid with grid-template-rows - use a space-separated list of widths or auto */
-    
+    grid-template-rows: auto;
   /* STEP 10: Designate the cells of the resulting grid in terms of user-named content areas - repeat names for merged cells */
-    
+    grid-template-areas: 
+        "header header header header"
+        "navigation main main sidebar"
+        "footer footer footer footer";
   /* STEP 12a: Set gutters between column tracks with column-gap */
-    
+    column-gap: 10px;
   /* STEP 12b: Set gutters between row tracks with row-gap */
-    
+    row-gap: 10px;
   }
   /* .container div {
     padding: 1rem;
@@ -152,22 +175,22 @@ textarea {
   /* STEP 11a: Associate the below element with the user-defined content zone, "header" with grid-area */
   #item-a {
     background-color: rgba(0,0,255,0.5);
-    
+    grid-area: header;
   }
   /* STEP 11b: Associate the below element with the user-defined content zone, "sidebar" with grid-area */
   #item-b {
     background-color: rgba(255,0,0,0.5);
-    
+    grid-area: sidebar;
   }
   /* STEP 11c: Associate the below element with the user-defined content zone, "main" with grid-area */
   #item-c {
     background-color: rgba(255,255,0,0.5);
-    
+    grid-area: main;
   }
   /* STEP 11d: Associate the below element with the user-defined content zone, "footer" with grid-area */
   #item-d {
     background-color: rgba(0,255,0,0.5);
-    
+    grid-area: footer;
   }
   /* STEP 11e: Associate the below element with the user-defined content zone, "navigation" with grid-area */
   #item-e {
