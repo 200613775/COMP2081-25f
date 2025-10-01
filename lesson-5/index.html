@@ -7,13 +7,16 @@
 
 		<!-- Bootstrap -->
 		<!-- STEP 1: Link to the Bootstrap CSS using a Content Distribution Network (CDN), and the Bootstrap JS libraries (jQuery, popper.js, and bootstrap.js) at the bottom of the page template -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
 		<!-- STEP 11: Link to your custom styles, then open the CSS file in your code editor -->
 
+		<link href="css/custom.css" rel="stylesheet" />
 	</head>
 	<body>
 		<!-- STEP 2: Build a fluid or a fixed-width container for proper alignment and padding of content-->
 
+		<div class="container">
 		<!-- STEP 3: Build out your basic page-level containers, HEADER, MAIN, FOOTER,and add an H1 inside the HEADER to begin the document outline -->
 
 				<h1>Carousel | Bootstrap</h1>
@@ -31,10 +34,74 @@
 
 			<p><small>Learn more about the <a href="https://getbootstrap.com/docs/4.5/components/carousel/" title="View the Bootstrap documentation for the JavaScript Carousel Component">Bootstrap Carousel JavaScript Component</a>.</small></p>
 
+			<header>
+					<h1>Carousel | Bootstrap</h1>
+			</header>
+			<main>
+				<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+					<!-- Carousel Indicators -->
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>						
+						<button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>					
+					</div><!-- .carousel-indicators -->
+					<div class="carousel-inner">
+						<figure class="carousel-item active">
+							<img src="img/car1.jpg" class="d-block w-100" alt="C9R">
+							<figcaption class="carousel-caption position-absolute top-0 pt-1">
+								<h5>C9R</h5>
+								<p>A really fast coupe</p>
+							</figcaption>
+						</figure>
+						<figure class="carousel-item">
+							<img src="img/car2.jpg" class="d-block w-100" alt="C9">
+							<figcaption class="carousel-caption position-absolute top-0 pt-1">
+								<h5>C9</h5>
+								<p>A really quick grocery-getter</p>
+							</figcaption>
+						</figure>
+						<figure class="carousel-item">
+							<img src="img/car3.jpg" class="d-block w-100" alt="X9X">
+							<figcaption class="carousel-caption position-absolute top-0 pt-1">
+								<h5>X9X</h5>
+								<p>A crazy-fun offroader</p>
+							</figcaption>
+						</figure>
+					</div><!-- .carousel-inner -->
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+						<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16" aria-hidden="true">
+  							<path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+						</svg>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+						<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16" aria-hidden="true">
+							<path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+						</svg>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div><!-- .carousel -->
+			<!-- STEP 4: Copy the example code from the Bootstrap documentation (use the handy "COPY" button to the top right of the code example panel), paste here, and adjust formatting -->
+			<!-- STEP 5: Replace any generic elements with more semantic sectioning or phrasing elements - add all appropriate classes to elements -->
+			<!-- STEP 6: Add a caption to each slide -->
+			<!-- STEP 7: Add a placeholder image for each slide (http://via.placeholder.com/1200x400) -->
+			<!-- STEP 8: Add a third slide, and point IMG elements to photos of cars provided in img/ directory -->
+			<!-- STEP 9a: Add the next/prev icons (add the HTML with the appropriate classes below) -->
+			<!-- STEP 9b: Change the icons - consult https://icons.getbootstrap.com/ to pick a new set of arrows using SVG and insert below -->
+			<!-- STEP 9c: Add the carousel indicators just inside the #carousel-cars, but before the .carousel-inner using the appropriate HTML -->
+			<!-- STEP 10: Let's change the position of the captions - go to STEP 11 above -->
+			</main>
+			<footer>
+				<p><small>Learn more about the <a href="https://getbootstrap.com/docs/4.5/components/carousel/" title="View the Bootstrap documentation for the JavaScript Carousel Component">Bootstrap Carousel JavaScript Component</a>.</small></p>
+			</footer>
+		</div><!-- .container -->
 		<!-- Include Popper JS, then Bootstrap JS -->
 
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
 		<!-- STEP 14: Use custom JavaScript to control the carousel. Attach js/custom.js below -->
 
+		<script src="js/custom.js"></script>
 		<!-- IMAGE ATTRIBUTIONS
 
 		https://www.flickr.com/photos/songzhen/6000306219/
