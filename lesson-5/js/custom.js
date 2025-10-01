@@ -15,3 +15,10 @@ carouselCars.addEventListener('slide.bs.carousel', event => {
 carouselCars.addEventListener('slid.bs.carousel', event => {
     carouselCars.classList.remove("zoomit");
 });
+
+// for lab
+document.addEventListener('keydown', function (event) {
+  if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+    event.preventDefault();
+  }
+});
