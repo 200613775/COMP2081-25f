@@ -5,6 +5,7 @@
 		<title>Different Types of Cheese | COMP2081 Advanced UI Design Using CSS</title>
 		<!-- STEP 1: Get Bootstrap CSS -->
 		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 		<style>
 			a.active {
 				background-color: grey;
@@ -15,22 +16,29 @@
 	</head>
 	<!-- STEP 10: The body is a scrollable container, so add data-bs-spy="scroll" and data-bs-target="#pageNav" (the id of the navigation element to be controlled) -->
 	<body>
+	<body data-bs-spy="scroll" data-bs-target="#pageNav">
 		<!-- STEP 3: Add a DIV for the container class -->
 		<div>
+		<div class="container">
 		<!-- STEP 4: Add a DIV for a row class -->
 			<div>
+			<div class="row">
 				<!-- STEP 5: Set the HEADER as a full-width column -->
 				<header>
+				<header class="col-12">
 					<h1>Different Types of Cheese</h1>	
 					<!-- Global navigation for the site would go here -->		
 				</header>
 			</div>
 			<!-- STEP 6: Create a DIV for another row -->
 			<div>
+			<div class="row">
 				<!-- STEP 7: Set the NAV as a column (span of 4) and add a unique id -->
 				<nav>
+				<nav id="pageNav" class="col-4">
 				<!-- STEP 9: Add class="sticky-top" to the UL element below so it stays on the page while scrolling -->
 					<ul>
+					<ul class="sticky-top">
 						<li><a href="#b1" title="">Fresh Cheeses</a>
 							<ul>
 								<li><a href="#b1c1" title="">Cottage Cheese</a></li>
@@ -69,6 +77,7 @@
 				</nav>
 				<!-- STEP 8: Set the MAIN as a column as well (span of 8) -->
 				<main>
+				<main class="col-8">
 					<section>
 						<!-- Thanks to http://www.cheeseipsum.co.uk/ -->
 						<h2>Cheese is Awesome</h2>
@@ -141,5 +150,7 @@
 		</div><!-- .container -->
 		<!-- STEP 2: Get Bootstrap JS -->
 		
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
 	</body>
 </html>
