@@ -5,9 +5,9 @@
 		<meta charset="utf-8">
 		<title>CSS Silly Putty</title>
 		<!-- STEP 2: Normalize your CSS -->
-		
+		<link href="css/normalize.css" rel="stylesheet" />
 		<!-- STEP 3: Attach external CSS -->
-		
+		<link href="css/styles.css" rel="stylesheet" />
 	</head>
 	<body>
 		<div id="container">
@@ -15,6 +15,7 @@
 				<h1><strong>CSS <em>Silly Putty</em></strong></h1>
 				<h2>Bend, Stretch and Twist Your Designs</h2>
 				<nav><!-- Global navigation would go here --></nav>
+				
 			</header>
 			<main>
 				<section id="transforms">
@@ -28,11 +29,11 @@
 					<p>We'll start with a simple translate transform. This moves the element from its original position in the document to the new location specified by the X and Y co-ordinates supplied.</p>
 					<h3>Scaling</h3>
 					<p>The scale transform function scales the element it is applied on by the value specified from the point of origin.</p>
-					<h3>Skewing
+					<h3>Skewing</h3>
 					<p>The skew transform function skews the element along the X or Y axis, or both. The value is specified in degrees (deg), and if only one value is specified the skew on the Y axis is set to 0 or no skew.</p>
 					<p>As with other transform functions the X and Y directions can be specified individually using skewX and skewY. If a negative value is supplied the skew is performed in the opposite direction, i.e. leaning to the right for a negative skew on the X axis, and from bottom to top for a negative skew on the Y axis.</p>
 					<h3>Rotating</h3>
-					<p>The rotate transform function rotates the element around the point of origin and as with skewing is specified in degrees. A negative value will rotate the element anti-clockwise.
+					<p>The rotate transform function rotates the element around the point of origin and as with skewing is specified in degrees. A negative value will rotate the element anti-clockwise.</p>
 					<h3>Combining Transforms</h3>
 					<p>Multiple transforms can be applied to one transform property using a space-separated list. When multiple transforms are used, they are applied one after another linearly from left to right.</p>
 				</section>

@@ -5,18 +5,21 @@ html {
 }
 /* STEP 3: Apply a background gradient image to the page (http://colorzilla.com/gradient-editor/) */
 body {
-	
+	background: linear-gradient(to bottom,  #1e5799 0%,#7ea6ea 38%);
 }
 #container {
 	margin: 1rem;
 }
 /* STEP 4: CSS Image Replacement (https://css-tricks.com/the-image-replacement-museum/) */
 header h1 {
-
+	height: 160px;
+	width: 250px;
+	background: url("../images/silly-putty.png") no-repeat;
 }
 
 header h1 strong {
-
+	visibility: hidden;
+	left: -999px;
 }
 /* STEP 5: Add the 'Chewy' font from Google's Font Service and apply it to all H2 and H3 elements - add the @import to the top of the CSS file */
 h2, h3 {
@@ -26,25 +29,53 @@ h2, h3 {
 
 /* TRANSFORMS
 -------------------------------------------------- */
-/* STEP 6a: Control the origin of the transform (play with this in the dev tools in the browser using rotation */
+/* STEP 6: Control the origin of the transform (play with this in the dev tools in the browser using rotation */
 #transforms h3:nth-of-type(2) {
+	transform: rotate(30deg);
+	display: inline-block;
+	transform-origin: 50% 50%;
+	outline: 2px dashed yellow;
 }
 /* STEP 7: Translate the element (X, Y, and combined) */
 #transforms h3:nth-of-type(3) {
+	display: inline-block;
+	transform: translateX(100px);
+	transform: translateY(-50px);
 }
 /* STEP 8: Scale the element (X, Y, and combined) */
 #transforms h3:nth-of-type(4) {
+	display: inline-block;
+	outline: 2px dashed orange;
+	transform: scaleX(2);
+	transform: scaleY(3);
+	transform: scale(2, 3);
+	transform-origin: 0 100%;
 }
 /* STEP 9: Skew the element (X, Y, and combined) */
 #transforms h3:nth-of-type(5) {
+		display: inline-block;
+	outline: 2px dashed red;
+	transform-origin: right center;
+	transform: skewX(-30deg);
+	transform: skewY(45deg);
 }
 
 /* STEP 10: Rotate the element (X, Y, and Z) */
 #transforms h3:nth-of-type(6) {
+	display: inline-block;
+	outline: 2px dashed white;
+	transform: rotateZ(45deg);
+	transform: rotateY(45deg);
+	transform: rotateZ(45deg);
+	transform: rotate(30deg);
+	transform: rotate3d(1, 1, 1, 30deg);
 }
 
 /* STEP 11: Combining transforms */
 #transforms h3:nth-of-type(7) {
+	display: inline-block;
+	outline: 2px dashed green;
+	transform: matrix();
 }
 
 /* TRANSITIONS
@@ -52,7 +83,7 @@ h2, h3 {
 /* STEP 12: Setting up a transition */
 #transitions h3:nth-of-type(1) {
 	/* Transition property */
-	/* Transition duration */
+	/* Transition duration */  
 }
 #transitions h3:nth-of-type(1):hover {
 }
@@ -62,6 +93,7 @@ h2, h3 {
 	/* Transition property */
 	/* Transition duration */
 	/* Transition delay */
+	transition-delay: 0.5;
 }
 #transitions h3:nth-of-type(2):hover {
 }
@@ -71,8 +103,9 @@ h2, h3 {
 	/* Transition property */
 	/* Transition duration */
 	/* Transition timing function */
+	transition-timing-function: ease-in;
 }
-#transitions h3:nth-of-type(3):hover {
+#transitions h3:nth-of-type(3):hover { 
 }
 
 /* STEP 15: Combining Transitions */
@@ -86,4 +119,31 @@ h2, h3 {
 -------------------------------------------------- */
 
 footer p {
+	display: inline-block;
+	background-color: limegreen;
+	font-weight: bold;
+	position: relative;
+	left: 0;
+	/* Animation */
+	animation-name: slidein;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes slidein {
+	from {
+		left: 0;
+	}
+	25% {
+		left: 50px;
+		font-size: 150%;
+	}
+	75%{
+		left: 125px;
+		background-color: #1e5799;
+	}
+	to {
+		left: 150px;
+	}
 }

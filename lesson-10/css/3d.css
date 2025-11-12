@@ -12,7 +12,7 @@ html {
     border: 1px solid #CCC;
     margin: 40px;
     /* STEP 2: Remove the perspective() function below in STEP 1a, and instead add the perspective property on the parent element (as an option) */
-    
+    /* perspective: 400px; */
 }
 #perspective .panel {
     width: 100%;
@@ -23,6 +23,7 @@ html {
 #perspective .panel:hover {
     /* STEP 1a: Use the perspective() and the rotateY() functions */
     
+    transform: rotateX(40deg);
     /* STEP 1b: Try the rotateX() function, instead */
     /* STEP 1c: Modify the degrees to some other value */
 }
@@ -35,21 +36,24 @@ html {
     border: 1px solid #CCC;
     margin: 40px;
     /* STEP 3a: Add perspective to the parent element */
-    
+    perspective: 500px;
     /* STEP 4: Modify the perspective origin - it defaults to the center */
-    
+    perspective: top;
 }
 #perspective2 .panel {
     width: 130px;
     height: 130px;
     background: blue;
     transition: all 0.2s;
+    transform: rotateY(20deg)
     
     /* STEP 3b: Comment out the above perspective declaration at STEP 2a and add the perspective function to the above declaration, instead - see how each element now has its own vanishing point? */
     /* STEP 3c: Restore the perspective on the parent so that all cards share a common vanishing point, restoring the illusion */
 }
 /* STEP 5: Move the transform rotate() function to a :hover to better see the effect */
-
+#perspective2 .panel:hover{
+    transform: rotateX(30deg);
+}
 /* STEP 6: Play around with some of the perspective-origin and rotate values */
 
 /* This lesson inspired by the excellent demonstration of 3D CSS capabilities at https://3dtransforms.desandro.com/ - Check it out to see even more fantastic effects */
