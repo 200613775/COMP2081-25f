@@ -1,39 +1,111 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>Lab D | 2D CSS Transforms</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: sans-serif;
-            background-repeat: no-repeat;
-        }
-        p {
-            height: 100px;
-            width: 100px;
-            color: white;
-            font-weight: bold;
-            text-align: center;
-        }
-        p#rotate {
-            background-color: orange;
-        }
-        p#scale {
-            background-color: purple;
-        }
-        p#skew {
-            background-color: limegreen;
-        }
-        p#translate {
-            background-color: hotpink;
-        }
-    </style>
+<meta charset="utf-8">
+<title>Lab D | 2D CSS Transforms</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* STEP 1 */
+body {
+    font-family: sans-serif;
+    background-color: white;
+}
+p {
+    height: 120px;
+    width: 150px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+    margin: 30px;
+    transition: all 0.6s ease;
+}
+
+/* STEP 2: Rotate */
+p#rotate {
+    background-color: orange;
+    transform: rotate(0deg);
+}
+p#rotate:hover {
+    transform: rotate(45deg);
+}
+
+/* STEP 3: Scale */
+p#scale {
+    background-color: purple;
+    transform: scale(1);
+}
+p#scale:hover {
+    transform: scale(1.4);
+}
+
+/* STEP 4: Skew */
+p#skew {
+    background-color: limegreen;
+    transform: skew(0deg, 0deg);
+}
+p#skew:hover {
+    transform: skew(30deg, 20deg);
+}
+
+/* STEP 5: Translate */
+p#translate {
+    background-color: hotpink;
+    transform: translate(0px, 0px);
+}
+p#translate:hover {
+    transform: translate(40px, -30px);
+}
+
+/* STEP 6:new paragraph with animation */
+p#animate {
+    background-color: rgb(22, 86, 139);
+    font-weight: bold;
+    position: relative;
+    animation-name: moveAround;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* STEP 7: Keyframes for the animation */
+@keyframes moveAround {
+    from {
+        left: 0;
+        top: 0;
+        background-color: rgb(81, 86, 215);
+    }
+    25% {
+        left: 40px;
+        background-color: rgb(103, 126, 237);
+        transform: rotate(10deg);
+    }
+    50% {
+        left: 50px;
+        top: 30px;
+        background-color: rgb(83, 149, 235);
+        transform: scale(1);
+    }
+    75% {
+        left: 20px;
+        top: 0;
+        background-color: rgb(118, 118, 210);
+        transform: rotate(-15deg);
+    }
+    to {
+        left: 0;
+        top: 0;
+        background-color: rgb(77, 88, 126);
+        transform: scale(1.2);
+    }
+}
+</style>
 </head>
 <body>
     <p id="rotate">Rotate me.</p>
     <p id="scale">Scale me.</p>
     <p id="skew">Skew me.</p>
     <p id="translate">Translate me.</p>
+    <p id="animate">Animate me.</p>
 </body>
 </html>
