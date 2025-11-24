@@ -6,29 +6,27 @@
     <title>The Invisible Life of Addie LaRue</title>
 
     <!-- Bootstrap CSS -->
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
 
-    <!-- Link the Custom CSS file -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
 
-<!-- NAVBAR with links -->
+<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
         <a class="navbar-brand" href="#">Addie LaRue</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Author</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Buy Now</a></li>
+                <li class="nav-item"><a class="nav-link" href="#author">Author</a></li>
+                <li class="nav-item"><a class="nav-link" href="#buy">Buy Now</a></li>
             </ul>
         </div>
     </div>
@@ -40,113 +38,112 @@
     <p class="lead">By V.E. Schwab</p>
 </header>
 
-<!-- MAIN CONTENT -->
-<div class="container py-5">
+<!-- Added a information for Book and Author -->
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center">
+                <img src="images/cover.png" class="img-fluid rounded shadow" alt="Book Cover">
+            </div>
+            <div class="col-md-8">
+                <h2 class="custom-heading mb-3">About the Book</h2>
+                <p>
+                    Adeline "Addie" LaRue from 1714 France makes a desperate deal for eternal life but is cursed to be forgotten by everyone she meets. Her story unfolds 300 years later when someone finally remembers her name. A novel about identity, memory, love, and the desire to be remembered.
+                </p>
+                <hr class="my-4">
+                <section id="author">
+                    <div class="d-flex align-items-center">
+                        <img src="images/author.png" class="me-3 shadow" alt="Author" style="width:130px; border-radius:10px;">
+                        <div>
+                            <h3 class="custom-heading mb-2">About the Author</h3>
+                            <p class="mb-0">
+                                V.E. Schwab is a bestselling fantasy author known for lyrical writing, unforgettable characters, and imaginative worlds. She has written <em>A Darker Shade of Magic</em>, <em>Vicious</em>, and many more.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
 
+<hr class="my-6">
+
+<!-- REVIEWS -->
+<h2 class="custom-heading mb-3 text-center">Reviews ⭐⭐⭐⭐⭐</h2>
+<div class="container mb-5">
     <div class="row">
-        <!-- add a Book Cover image -->
-        <div class="col-md-4 text-center">
-            <img src="images/cover.png" class="img-fluid rounded shadow" alt="Book Cover">
+        <div class="col-md-4">
+            <div class="p-3 border rounded shadow-sm">
+                <p> "A haunting, unforgettable story that stays with you long after the last page."</p>
+                <small>- The New York Times</small>
+            </div>
         </div>
-
-        <!-- about the book-->
-        <div class="col-md-8">
-            <h2 class="custom-heading">About the Book</h2>
-            <p>
-               Adeline "Addie" LaRue from 1714 France to today, tries to make a deal with the devil to gain eternal life but at the same time, she will be forgotten by all people she comes across. Her life is turned upside down 300 years later when she meets a guy who knows her name. A haunting, unforgettable tale about existence, love, and making an impression on the planet.
-            </p>
+        <div class="col-md-4">
+            <div class="p-3 border rounded shadow-sm">
+                <p>"Addie LaRue is a character you will never forget. Beautifully written and deeply moving." </p>
+                <small>- NPR</small>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="p-3 border rounded shadow-sm">
+                <p>"A mesmerizing story of life, love, and the passage of time. V.E. Schwab at her best."</p>
+                <small>- Booklist</small>
+            </div>
         </div>
     </div>
-    <h2 class="custom-heading mb-3">Let's See The Reviews⭐⭐⭐ </h2>
-
-<div class="row">
-  <div class="col-md-4">
-    <div class="p-3 border rounded shadow-sm">
-      
-      <p>"A haunting, unforgettable story that stays with you long after the last page."</p>
-      <small>- The New York Times</small>
-    </div>
-  </div>
-
-  <div class="col-md-4">
-    <div class="p-3 border rounded shadow-sm">
-    
-      <p>"Addie LaRue is a character you will never forget. Beautifully written and deeply moving."</p>
-      <small>- NPR</small>
-    </div>
-  </div>
-
-  <div class="col-md-4">
-    <div class="p-3 border rounded shadow-sm">
-      <p>"A mesmerizing story of life, love, and the passage of time. V.E. Schwab at her best."</p>
-      <small>- Booklist</small>
-    </div>
-  </div>
 </div>
 
-    <hr class="my-5">
+<hr class="my-6">
 
-    <!-- ACCORDION -->
-    <h2 class="custom-heading mb-3">Explore the Story</h2>
-
+<!-- ACCORDION -->
+<div class="container">
+    <h2 class="custom-heading mb-3">Explore the book Story</h2>
     <div class="accordion" id="tocAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header">
-                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#chapter1">
-                    Chapter 1
-                </button>
+                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#chapter1">Chapter 1</button>
             </h2>
             <div id="chapter1" class="accordion-collapse collapse show">
-                <div class="accordion-body">
-
-                    Addie LaRue is a girl born in 1714 in a little French town that is not the place for her aspirations. The imminent betrothal to a suitor chosen by her parents only makes her desires for liberation stronger. With a mix of desperation and boldness, she invokes a dark deity after dusk—a blunder that is, by all means, a big no-no. The deity complies with her wish: she shall be free, unshackled, and shall live for eternally.
+                <div class="accordion-body">Addie LaRue is a girl born in 1714 in a little French town that is not the place for her aspirations. The imminent betrothal to a suitor chosen by her parents only makes her desires for liberation stronger. With a mix of desperation and boldness, she invokes a dark deity after dusk—a blunder that is, by all means, a big no-no. The deity complies with her wish: she shall be free, unshackled, and shall live for eternally.
                     However, along with the gift goes a curse—she shall be no one's after the moment she disappears from sight.
-                    This chapter is the one that creates the emotional atmosphere and marks the start of Addie’s 300-year-long journey.
-                </div>
+                    This chapter is the one that creates the emotional atmosphere and marks the start of Addie’s 300-year-long journey.</div>
             </div>
         </div>
-
         <div class="accordion-item">
             <h2 class="accordion-header">
-                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#chapter2">
-                    Chapter 2
-                </button>
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#chapter2">Chapter 2</button>
             </h2>
             <div id="chapter2" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                    Immortal and isolated now, Addie gets a painful introduction to the terrifying rules that come with her new existence.
+                <div class="accordion-body">Immortal and isolated now, Addie gets a painful introduction to the terrifying rules that come with her new existence.
                     People forget about her in a matter of seconds.
                     She is not allowed to have a place, a job or even someone who knows her by her name.
                     Even inanimate things elude her unless she pilfers them.
-                    The chapter recounts the protagonist's early days of stumbling, starving and being invisible in each interaction. It reflects the sorrow of being overlooked—and the resolution that is always there to help her go on. 
-                </div>
+                    The chapter recounts the protagonist's early days of stumbling, starving and being invisible in each interaction. It reflects the sorrow of being overlooked—and the resolution that is always there to help her go on. </div>
             </div>
         </div>
         <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chapterThree" aria-expanded="false" aria-controls="chapterThree">
-                    Chapter 3 
-                   </button>
-               </h2>
-                <div id="chapterThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#tocAccordion">
-                  <div class="accordion-body">
-                     Time seems to elongate. Addie goes on a tour to Europe, getting used to a world that will never know her but will always be her endless fascination.
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#chapter3">Chapter 3</button>
+            </h2>
+            <div id="chapter3" class="accordion-collapse collapse">
+                <div class="accordion-body"> Time seems to elongate. Addie goes on a tour to Europe, getting used to a world that will never know her but will always be her endless fascination.
                       She remains a quiet muse to various creative minds, giving birth to pictures, sounds, and novels she will never be able to attribute to her name.
                       The storyteller delves into her tenacity, smart survival tactics, and the life-giving agony of healing for centuries without ever being completely accepted.
-                      This chapter enriches her character and demonstrates how she gradually learns to coexist with her curse by not resisting it anymore.
+                      This chapter enriches her character and demonstrates how she gradually learns to coexist with her curse by not resisting it anymore.</div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
-    </div>
-
 
 <!-- FOOTER -->
-<footer class="text-center py-4 bg-dark text-light">
+<footer class="text-center py-4 bg-dark text-light mt-5">
     <p class="mb-0">Publisher: Tor Books | © 2020</p>
 </footer>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom JS -->
 <script src="js/script.js"></script>
 
 </body>
