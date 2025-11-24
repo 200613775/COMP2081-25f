@@ -1,0 +1,88 @@
+/* Font for Headings */
+@font-face {
+    font-family: 'BookHeading';
+    src: url('../fonts/BookHeading.ttf') format('truetype');
+}
+
+.custom-heading {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+}
+
+/* Body text */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+}
+
+/* Navbar */
+.navbar-brand { 
+    font-weight: 200;
+ }
+.nav-link { 
+    font-weight: 600; 
+    cursor:pointer; 
+}
+
+/* Images */
+img { 
+    max-width: 100%; 
+    border-radius: 8px; 
+    transition: transform 0.3s ease; 
+}
+img:hover { 
+    transform: scale(1.02); 
+}
+
+
+/* Accordion */
+.accordion-button:focus, .accordion-button:not(.collapsed) {
+    background-color: #727474;
+    color: white;
+}
+
+/* Carousel */
+.carousel-item img { 
+    height: 400px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+}
+
+/* Tab Panel */
+.tab-content > div { 
+    padding: 1.2rem; 
+    border: 1px solid #c1bfbf; 
+    border-top: none; 
+    border-radius: 0 0 10px 10px; 
+}
+
+/* Forms */
+form { 
+     background: #727474;
+     color: white;
+     border-radius: 10px; 
+     padding: 20px; 
+}
+
+/* designing for Footer */
+footer { 
+    background: #111; 
+    color: #ccc; 
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    section .row { 
+        flex-direction: column;
+        text-align: center; 
+    }
+    section .row img { 
+        margin-bottom: 20px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .tab-content { font-size: 0.8rem; padding: 15px; }
+    form { padding: 16px; }
+}
