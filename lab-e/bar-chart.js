@@ -1,3 +1,4 @@
+// capture the fill ractengle
 let bar = document.querySelector("svg #barFill");
 
 let percent = document.querySelector("svg text").textContent;
@@ -5,6 +6,7 @@ let percent = document.querySelector("svg text").textContent;
 percent = percent.replaceAll("%", "");
 percent = parseInt(percent, 10);
 
+// Converted percent to string value for width
 let barWidth = percent + "%";
 
 const cssRulesList = document.styleSheets[0].cssRules;
@@ -15,5 +17,5 @@ for (let i = 0; i < cssRulesList.length; i++) {
 		svgActiveRule = cssRulesList[i];
 	}
 }
-
+//  Updated CSS rule
 svgActiveRule.style.setProperty("width", barWidth);
