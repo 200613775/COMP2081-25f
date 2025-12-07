@@ -1,0 +1,29 @@
+/* For Logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #222;
+  color: #fff;
+}
+
+.logo-container img.logo {
+  height: 50px;
+}
+
+/* Header*/
+.logo-container h1 {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+/*text section */
+.intro-text {
+  max-width: 700px;
+  margin: 1.8rem auto;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #1c1c1c;
+}
