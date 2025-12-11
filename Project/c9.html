@@ -8,12 +8,16 @@
 </head>
 <body>
 
-<header class="site-header">
-  <div class="header-inner">
-    <img src="images/automoblox_logo.jpg" alt="Automoblox Logo" class="header-logo">
-    <h1 class="site-title">Automoblox Wooden Cars</h1>
+<!-- Accessibility: Skip Link -->
+<a href="#main-content" class="skip-link">Skip to Content</a>
 
-    <nav class="main-nav">
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <!-- Logo -->
+    <a class="logo" href="index.html">AUTOMOBLOX</a>
+
+    <!-- Navigation -->
+    <nav class="main-nav" aria-label="Primary Navigation">
       <ul class="nav-list">
         <li><a href="index.html">Home</a></li>
         <li><a href="a9.html">A9</a></li>
@@ -23,35 +27,47 @@
         <li><a href="x9.html">X9</a></li>
       </ul>
     </nav>
+
+    <!-- Cart Icon Placeholder -->
+    <button class="cart-button" aria-label="View shopping cart">Cart</button>
   </div>
 </header>
 
-<main class="product-page">
+<main id="main-content" class="product-page">
 
-  <a class="back-link" href="index.html"> Back to Collection</a>
+  <!-- Breadcrumbs -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="index.html">Home</a> ›
+    <span>C9</span>
+  </nav>
 
-  <section class="product-detail">
+  <!-- Back Link -->
+  <a class="back" href="index.html"> Back to collection</a>
 
-    <!-- Product Image -->
-    <div class="product-image">
-      <img src="images/c9_large.jpg" alt="Automoblox C9">
-    </div>
+  <section class="product-detail grid-container">
+
+    <!-- Image Gallery -->
+    <figure class="gallery">
+      <img src="images/c9_large.jpg" alt="Automoblox C9 full view">
+      <figcaption>Automoblox C9 – Full-size Image</figcaption>
+    </figure>
 
     <!-- Product Info -->
-    <div class="product-info">
-      <h2>Automoblox C9</h2>
-
-      <p class="model-number"><strong>Model:</strong> C9</p>
+    <aside class="product-info">
+      <h1>Automoblox C9</h1>
+      <p class="sku"><strong>Model:</strong> C9</p>
       <p class="price">$23.99</p>
 
-      <div class="product-description">
-        <h3>Overview</h3>
+      <!-- Overview -->
+      <section class="description">
+        <h2>Overview</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
         </p>
-      </div>
+      </section>
 
-      <div class="product-features">
+      <!-- Features -->
+      <section class="features">
         <h3>Features</h3>
         <ul>
           <li>Solid wood body</li>
@@ -59,23 +75,31 @@
           <li>Lorem Ipsum is simply dummy text</li>
           <li>Durable rubber wheels</li>
         </ul>
-      </div>
+      </section>
 
-      <!-- Cart Box -->
-      <div class="cart-box">
+      <!-- Cart UI -->
+      <section class="cart-box">
         <label for="quantity"><strong>Quantity:</strong></label>
         <input id="quantity" type="number" min="1" value="1">
+        <button class="add-to-cart" data-model="C9">Add to Cart</button>
+        <div class="cart-message"></div>
+      </section>
+    </aside>
+  </section>
 
-        <button class="add-to-cart">Add to Cart</button>
-      </div>
-
+  <!-- Related Cars -->
+  <section class="related-cars">
+    <h3>You May Also Like</h3>
+    <div class="related-grid">
+      <a href="a9.html"><img src="images/a9_small.jpg" alt="A9"></a>
+      <a href="s9.html"><img src="images/s9_small.jpg" alt="S9"></a>
+      <a href="c9r.html"><img src="images/c9r_small.jpg" alt="C9R"></a>
     </div>
-
   </section>
 
 </main>
 
-<footer class="site-footer">
+<footer class="site-footer" role="contentinfo">
   <small>© 2025 Automoblox Microsite</small>
 </footer>
 

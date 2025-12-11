@@ -8,14 +8,20 @@
 </head>
 <body>
 
-<header class="site-header">
+<!-- Accessibility: Skip Links -->
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<header class="site-header" role="banner">
   <div class="header-inner">
+
+    <!-- Logo + Site Title -->
     <div class="logo-container">
       <img src="images/automoblox_logo.jpg" alt="Automoblox Logo" class="logo">
       <h1>Automoblox Wooden Cars</h1>
     </div>
 
-    <nav class="main-nav">
+    <!-- Main Navigation -->
+    <nav class="main-nav" aria-label="Primary Navigation">
       <ul class="nav-list">
         <li><a class="active" href="index.html">Home</a></li>
         <li><a href="a9.html">A9</a></li>
@@ -25,10 +31,16 @@
         <li><a href="x9.html">X9</a></li>
       </ul>
     </nav>
+
+    <!-- Cart Icon Placeholder -->
+    <button class="cart-button" aria-label="View shopping cart">
+      Cart
+    </button>
+
   </div>
 </header>
 
-<main class="home-page">
+<main id="main-content" class="home-page">
 
   <!-- Intro -->
   <section class="intro-text">
@@ -36,36 +48,48 @@
   </section>
 
   <!-- Car Grid -->
-  <section class="main-grid">
-    <a class="car-card" href="a9.html">
-      <img src="images/a9_small.jpg" alt="A9">
-      <h3>A9 Wooden Car</h3>
-    </a>
+  <section class="main-grid" aria-label="Available Automoblox Cars">
 
-    <a class="car-card" href="c9.html">
-      <img src="images/c9_small.jpg" alt="C9">
-      <h3>C9 Wooden Car</h3>
-    </a>
+    <article class="car-card">
+      <a href="a9.html">
+        <img src="images/a9_small.jpg" alt="A9">
+        <h3>A9 Wooden Car</h3>
+      </a>
+    </article>
 
-    <a class="car-card" href="s9.html">
-      <img src="images/s9_small.jpg" alt="S9">
-      <h3>S9 Wooden Car</h3>
-    </a>
+    <article class="car-card">
+      <a href="c9.html">
+        <img src="images/c9_small.jpg" alt="C9">
+        <h3>C9 Wooden Car</h3>
+      </a>
+    </article>
 
-    <a class="car-card" href="c9r.html">
-      <img src="images/c9r_small.jpg" alt="C9R">
-      <h3>C9R Wooden Car</h3>
-    </a>
+    <article class="car-card">
+      <a href="s9.html">
+        <img src="images/s9_small.jpg" alt="S9">
+        <h3>S9 Wooden Car</h3>
+      </a>
+    </article>
 
-    <a class="car-card" href="x9.html">
-      <img src="images/x9_small.jpg" alt="X9">
-      <h3>X9 Wooden Car</h3>
-    </a>
+    <article class="car-card">
+      <a href="c9r.html">
+        <img src="images/c9r_small.jpg" alt="C9R">
+        <h3>C9R Wooden Car</h3>
+      </a>
+    </article>
+
+    <article class="car-card">
+      <a href="x9.html">
+        <img src="images/x9_small.jpg" alt="X9">
+        <h3>X9 Wooden Car</h3>
+      </a>
+    </article>
+
   </section>
 
 </main>
 
-<footer class="site-footer">
+<footer class="site-footer" role="contentinfo">
   <small>© 2025 Automoblox Microsite</small>
 </footer>
 

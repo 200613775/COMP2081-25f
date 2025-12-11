@@ -1,54 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>S9 - Automoblox</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Automoblox — S9</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
-<header>
-  <h1>S9 Wooden Car</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="a9.html">A9</a>
-    <a href="c9.html">C9</a>
-    <a href="s9.html">S9</a>
-    <a href="c9r.html">C9R</a>
-    <a href="x9.html">X9</a>
-  </nav>
+<!-- Accessibility Skip Link -->
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <!-- Logo -->
+    <a class="logo" href="index.html">AUTOMOBLOX</a>
+
+    <!-- Navigation -->
+    <nav class="main-nav" aria-label="Primary Navigation">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="a9.html">A9</a></li>
+        <li><a href="c9.html">C9</a></li>
+        <li><a class="active" href="s9.html">S9</a></li>
+        <li><a href="c9r.html">C9R</a></li>
+        <li><a href="x9.html">X9</a></li>
+      </ul>
+    </nav>
+
+    <!-- Cart Icon Placeholder -->
+    <button class="cart-button" aria-label="View shopping cart">Cart</button>
+  </div>
 </header>
 
-<main class="car-page">
+<main id="main-content" class="product-page">
 
-  <section class="car-hero">
-    <img src="images/s9_large.jpg" alt="S9 Sport Sedan">
-    <div class="car-info">
-      <h2>Automoblox S9 Sport Sedan</h2>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+  <!-- Breadcrumbs -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="index.html">Home</a> ›
+    <span>S9</span>
+  </nav>
 
-      <p class="price"><strong>Price:</strong> $9.99</p>
+  <!-- Back Link -->
+  <a class="back" href="index.html"> Back to collection</a>
 
-      <button class="add-to-cart">Add to Cart</button>
-    </div>
+  <section class="product-detail grid-container">
+
+    <!-- Image Gallery -->
+    <figure class="gallery">
+      <img src="images/s9_large.jpg" alt="Automoblox S9 Sport Sedan">
+      <figcaption>Automoblox S9 Sport Sedan – Full-size Image</figcaption>
+    </figure>
+
+    <!-- Product Info -->
+    <aside class="product-info">
+      <h1>Automoblox S9 Sport Sedan</h1>
+      <p class="sku"><strong>Model:</strong> S9</p>
+      <p class="price">$9.99</p>
+
+      <!-- Overview -->
+      <section class="description">
+        <h2>Overview</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </p>
+      </section>
+
+      <!-- Features -->
+      <section class="features">
+        <h3>Features</h3>
+        <ul>
+          <li>Precision-cut beech wood body</li>
+          <li>Customizable wheels and tires</li>
+          <li>Lorem Ipsum is simply dummy text</li>
+          <li>Lorem Ipsum is simply dummy text</li>
+          <li>Lorem Ipsum is simply dummy text</li>
+        </ul>
+      </section>
+
+      <!-- Cart UI -->
+      <section class="cart-box">
+        <label for="quantity"><strong>Quantity:</strong></label>
+        <input id="quantity" type="number" min="1" value="1">
+        <button class="add-to-cart" data-model="S9">Add to Cart</button>
+        <div class="cart-message"></div>
+      </section>
+
+    </aside>
   </section>
 
-  <section class="car-details">
-    <h3>Features</h3>
-    <ul>
-      <li>Precision-cut beech wood body</li>
-      <li>Customizable wheels and tires</li>
-      <li>Lorem Ipsum is simply dummy text</li>
-      <li>Lorem Ipsum is simply dummy text</li>
-      <li>Lorem Ipsum is simply dummy text</li>
-    </ul>
+  <!-- Related Cars -->
+  <section class="related-cars">
+    <h3>You May Also Like</h3>
+    <div class="related-grid">
+      <a href="a9.html"><img src="images/a9_small.jpg" alt="A9"></a>
+      <a href="c9.html"><img src="images/c9_small.jpg" alt="C9"></a>
+      <a href="c9r.html"><img src="images/c9r_small.jpg" alt="C9R"></a>
+    </div>
   </section>
 
 </main>
 
-<footer>
-  <p>&copy; 2025 Automoblox Microsite</p>
+<footer class="site-footer" role="contentinfo">
+  <small>© 2025 Automoblox Microsite</small>
 </footer>
 
 </body>
